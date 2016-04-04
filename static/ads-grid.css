@@ -10,6 +10,10 @@
   list-style: none;
 }
 
+.status-select-cell:hover {
+  background-color: #eee;
+}
+
 .status-select-cell .dropdown li {
   padding: 3px 15px;
   cursor: pointer;
