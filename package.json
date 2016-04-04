@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/AdsBackgrid/ads-example#readme",
   "dependencies": {
-    "backgrid": "git://github.com/AdsBackgrid/backgrid.git#master"
+    "backbone": "^1.3.2",
+    "backgrid": "git://github.com/AdsBackgrid/backgrid.git#master",
+    "jquery": "^2.2.2",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
