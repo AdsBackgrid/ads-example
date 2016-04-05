@@ -8,7 +8,7 @@
   background: #fff;
   padding: 5px 0px;
   list-style: none;
-  width: 500px;
+  width: 200%;
 }
 
 .status-select-cell .dropdown > input {
