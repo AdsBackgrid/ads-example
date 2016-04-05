@@ -8,7 +8,7 @@
   background: #fff;
   padding: 5px 0px;
   list-style: none;
-  width: 200%;
+  width: 100%;
 }
 
 .status-select-cell .dropdown > input {
@@ -33,7 +33,7 @@
 }
 
 .backgrid td.editor.popup .pop-editor.value-unit-editor {
-  width: 500%;
+  width: 400px;
 }
 
 .backgrid td.editor.popup .pop-editor.value-unit-editor .value,
