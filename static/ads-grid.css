@@ -8,6 +8,11 @@
   background: #fff;
   padding: 5px 0px;
   list-style: none;
+  width: 500px;
+}
+
+.status-select-cell .dropdown > input {
+  width: 25%;
 }
 
 .status-select-cell:hover {
@@ -25,4 +30,13 @@
 
 .status-select-cell .dropdown li:hover {
   background-color: #eee;
+}
+
+.backgrid td.editor.popup .pop-editor.value-unit-editor {
+  width: 500%;
+}
+
+.backgrid td.editor.popup .pop-editor.value-unit-editor .value,
+.backgrid td.editor.popup .pop-editor.value-unit-editor .unit {
+  width: 30%;
 }

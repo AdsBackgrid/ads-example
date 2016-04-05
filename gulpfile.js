@@ -8,7 +8,7 @@ var buffer = require('vinyl-buffer');
 var gutil = require('gulp-util');
 var sourcemaps = require('gulp-sourcemaps');
 
-function getBrowserify() {
+function getWatchBrowserify() {
   // add custom browserify options here
   var customOpts = {
     entries: ['./lib/index.js'],
@@ -17,16 +17,15 @@ function getBrowserify() {
   var opts = Object.assign({}, watchify.args, customOpts);
   return watchify(browserify(opts));
 }
-
-// add transformations here
-// i.e. b.transform(coffeeify);
-
+ 
 gulp.task('js', function() {
-  return bundle(getBrowserify());
+  var b = browserify();
+  b.add('./lib/index.js');
+  return bundle(b);
 }); // so you can run `gulp js` to build the file
 
 gulp.task('watch-js', function() {
-  var b = getBrowserify();
+  var b = getWatchBrowserify();
   b.on('update', function() { bundle(b); }); // on any dep update, runs the bundler
   b.on('log', gutil.log); // output build logs to terminal
   return bundle(b);
