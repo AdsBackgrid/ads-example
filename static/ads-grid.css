@@ -40,3 +40,9 @@
 .backgrid td.editor.popup .pop-editor.value-unit-editor .unit {
   width: 30%;
 }
+
+.backgrid td.editor.popup .pop-editor select {
+  padding: 5px;
+  border: 1px solid #bbb;
+  margin-right: 5px;
+}
